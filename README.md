@@ -84,16 +84,9 @@ Change [first line of `saved_networks/checkpoint`](https://github.com/yenchenlin
 
 `model_checkpoint_path: "saved_networks/bird-dqn-2920000"`
 
-#### How to reproduce?
-1. Comment out [these lines](https://github.com/yenchenlin1994/DeepLearningFlappyBird/blob/master/deep_q_network.py#L108-L112)
-
-2. Modify `deep_q_network.py`'s parameter as follow:
-```python
-OBSERVE = 10000
-EXPLORE = 3000000
-FINAL_EPSILON = 0.0001
-INITIAL_EPSILON = 0.1
-```
+#### How to test?
+1. Uncomment these lines https://github.com/yenchenlin1994/DeepLearningFlappyBird/blob/master/deep_q_network.py#L108-L112
+You may want to decrease explore and elipson.
 
 ## References
 
