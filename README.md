@@ -2,20 +2,19 @@
 
 <img src="./images/flappy_bird_demp.gif" width="250">
 
-7 mins version: [DQN for flappy bird](https://www.youtube.com/watch?v=THhUXIhjkCM)
 
 ## Overview
 This project follows the description of the Deep Q Learning algorithm described in Playing Atari with Deep Reinforcement Learning [2] and shows that this learning algorithm can be further generalized to the notorious Flappy Bird.
 
 ## Installation Dependencies:
 * Python 2.7 or 3
-* TensorFlow 0.7
+* TensorFlow 2
 * pygame
 * OpenCV-Python
 
 ## How to Run?
 ```
-git clone https://github.com/yenchenlin1994/DeepLearningFlappyBird.git
+git clone https://github.com/Anonymous-Ol/DeepLearningFlappyBird-1.git
 cd DeepLearningFlappyBird
 python deep_q_network.py
 ```
@@ -23,9 +22,6 @@ python deep_q_network.py
 ## What is Deep Q-Network?
 It is a convolutional neural network, trained with a variant of Q-learning, whose input is raw pixels and whose output is a value function estimating future rewards.
 
-For those who are interested in deep reinforcement learning, I highly recommend to read the following post:
-
-[Demystifying Deep Reinforcement Learning](http://www.nervanasys.com/demystifying-deep-reinforcement-learning/)
 
 ## Deep Q-Network Algorithm
 
