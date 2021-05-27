@@ -86,7 +86,8 @@ Change [first line of `saved_networks/checkpoint`](https://github.com/yenchenlin
 
 #### How to test?
 1. Uncomment these lines https://github.com/yenchenlin1994/DeepLearningFlappyBird/blob/master/deep_q_network.py#L108-L112
- You may want to decrease explore and elipson.
+2. You may want to decrease explore and elipson.
+
 
 ## References
 
