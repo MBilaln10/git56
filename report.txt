@@ -1,0 +1,37 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: deep_q_network.py
+--------------------------------------------------------------------------------
+deep_q_network.py:184:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'deep_q_network.py'
+ outputting to 'deep_q_network_updated.py'
+--------------------------------------------------------------------------------
+
+25:14: INFO: Renamed 'tf.truncated_normal' to 'tf.random.truncated_normal'
+33:11: INFO: Added keywords to args of function 'tf.nn.conv2d'
+33:11: INFO: Renamed keyword argument for tf.nn.conv2d from filter to filters
+36:11: INFO: Added keywords to args of function 'tf.nn.max_pool'
+36:11: INFO: Renamed keyword argument for tf.nn.max_pool from value to input
+36:11: INFO: Renamed 'tf.nn.max_pool' to 'tf.nn.max_pool2d'
+56:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+80:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+81:8: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+82:21: INFO: Added keywords to args of function 'tf.reduce_sum'
+82:21: INFO: Renamed keyword argument for tf.reduce_sum from reduction_indices to axis
+83:11: INFO: Added keywords to args of function 'tf.reduce_mean'
+84:17: INFO: Renamed 'tf.train.AdamOptimizer' to 'tf.compat.v1.train.AdamOptimizer'
+105:12: INFO: Renamed 'tf.train.Saver' to 'tf.compat.v1.train.Saver'
+106:13: INFO: Renamed 'tf.initialize_all_variables' to 'tf.compat.v1.initialize_all_variables'
+184:12: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+207:11: INFO: Renamed 'tf.InteractiveSession' to 'tf.compat.v1.InteractiveSession'
+--------------------------------------------------------------------------------
+
