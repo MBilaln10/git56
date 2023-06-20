@@ -202,12 +202,12 @@ def trainNetwork(s, readout, h_fc1, sess):
             h_file.write(",".join([str(x) for x in h_fc1.eval(feed_dict={s:[s_t]})[0]]) + '\n')
             cv2.imwrite("logs_tetris/frame" + str(t) + ".png", x_t1)
         '''
-
+# defining a function to play the game
 def playGame():
     sess = tf.InteractiveSession()
     s, readout, h_fc1 = createNetwork()
     trainNetwork(s, readout, h_fc1, sess)
-
+# calling the function to run the game
 def main():
     playGame()
 
